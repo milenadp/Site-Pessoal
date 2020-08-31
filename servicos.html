@@ -54,42 +54,61 @@
     <div class="container">
         <div class="paginaServico card border-0 shadow my-5">
             <div class="card-body p-5">
-                <section class="sessao-orcamento" id="orcamento">
-                    <div class="orcamento-wrapper">
-                        <fieldset class="fieldset-border">
-                            <legend class="legend-border">
-                                <h1>Faça um orçamento</h1>
-                            </legend>
-                            <form>
-                                <div class="campos">
-                                    <label for="qtde">Quantidade de Páginas:</label>
-                                    <input type="number" min="1" name="qtde" id="qtde">
-                                </div>
-                                <label for="js">Preciso de um script JS</label>
-                                <input type="checkbox" name="js" id="js"><br><br>
-                                <label><b>Layout</b></label>
-                                <div class="group-layout">
-                                    <div>
-                                        <input type="radio" name="layout" id="layout-sim">
-                                        <label for="layout-sim">Preciso de um layout</label>
+                <fieldset class="fieldset-border">
+                    <legend class="legend-border">
+                        <h1>Serviços</h1>
+                    </legend>
+                    <form class="tela" action="" method="post">
+                        <label for="servicos">Selecione um serviço:</label>
+                        <select name="servicos" id="servicos" onchange="atualizar()" required>
+                                  <option value="1">Web Sites</option>
+                                  <option value="2">Aplicações Mobile</option>
+                                  <option value="3">Soluções Digitais</option>
+                                  <option value="4">Marketing Digital</option>
+                                </select>
+
+                        <button type="button" onclick="mostrarOrcamento()">Fazer orçamento</button><br><br>
+                        <p id="" disabled size=50></p>
+
+                    </form>
+
+
+                    <section class="sessao-orcamento" id="orcamento" style="display: none;">
+                        <div class="orcamento-wrapper">
+                            <form id="myForm">
+                                <div id="campos">
+                                    <div class="campos">
+                                        <label for="qtde">Quantidade de Páginas:</label>
+                                        <input type="number" min="1" name="qtde" id="qtde" required>
                                     </div>
-                                    <div>
-                                        <input type="radio" name="layout" id="layout-nao">
-                                        <label for="layout-nao">Já tenho um layout</label>
+                                    <label for="js">Preciso de um script JS</label>
+                                    <input type="checkbox" name="js" id="js"><br><br>
+                                    <label><b>Layout</b></label>
+                                    <div class="group-layout">
+                                        <div>
+                                            <input type="radio" name="layout" id="layout-sim">
+                                            <label for="layout-sim">Preciso de um layout</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="layout" id="layout-nao">
+                                            <label for="layout-nao">Já tenho um layout</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <label for="prazo">Prazo:</label><br>
-                                <input type="range" name="prazo" id="prazo" min="1" max="10"><br>
+                                <input type="range" name="prazo" id="prazo" min="1" max="10" value="10"><br>
                                 <label id="preco">R$ 0,00</label><br>
-                                <button class="btn btn-orcamento" type="submit">Enviar</button>
-                                <button class="btn btn-orcamento" type="reset" onclick="apagar()">Apagar</button>
+                                <button class="btn btn-orcamento" type="submit" onclick="enviar()">Enviar</button>
+                                <button class=" btn btn-orcamento " type="reset" onclick="apagar() ">Apagar</button>
                             </form>
-                        </fieldset>
-                    </div>
-                </section>
+                        </div>
+                    </section>
+
+
+                </fieldset>
                 <!-- RODAPÉ -->
                 <footer>
-                    <div class="rodape footer-content">
+                    <div class="rodape footer-content ">
                         <p>Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear())
@@ -103,7 +122,7 @@
 </body>
 
 <!-- Scripts -->
-<script type="text/javascript" src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript " src="script.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
 
 </html>
