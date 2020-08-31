@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MDPZ</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Trade+Winds&display=swap" rel="stylesheet">
+
+    <!-- Icones Bootstrap 
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+    <!-- Main navigation -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">MDPZ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Início
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="paginaServico card border-0 shadow my-5">
+            <div class="card-body p-5">
+                <section class="sessao-orcamento" id="orcamento">
+                    <div class="orcamento-wrapper">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">
+                                <h1>Faça um orçamento</h1>
+                            </legend>
+                            <form>
+                                <div class="campos">
+                                    <label for="qtde">Quantidade de Páginas:</label>
+                                    <input type="number" min="1" name="qtde" id="qtde">
+                                </div>
+                                <label for="js">Preciso de um script JS</label>
+                                <input type="checkbox" name="js" id="js"><br><br>
+                                <label><b>Layout</b></label>
+                                <div class="group-layout">
+                                    <div>
+                                        <input type="radio" name="layout" id="layout-sim">
+                                        <label for="layout-sim">Preciso de um layout</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="layout" id="layout-nao">
+                                        <label for="layout-nao">Já tenho um layout</label>
+                                    </div>
+                                </div>
+                                <label for="prazo">Prazo:</label><br>
+                                <input type="range" name="prazo" id="prazo" min="1" max="10"><br>
+                                <label id="preco">R$ 0,00</label><br>
+                                <button class="btn btn-orcamento" type="submit">Enviar</button>
+                                <button class="btn btn-orcamento" type="reset" onclick="apagar()">Apagar</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                </section>
+                <!-- RODAPÉ -->
+                <footer>
+                    <div class="rodape footer-content">
+                        <p>Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> Milena Dal Paz - Todos os direitos reservados</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Scripts -->
+<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</html>
