@@ -87,8 +87,8 @@ function enviar() {
         layout = "Não";
     }
 
-    mailto1 = "mailto:milenadpz@gmail.com?subject=Or%C3%A7amento&body=Servi%C3%A7o%20or%C3%A7ado%3A%20" + ServPrest + "%0D%0AQuantidade%20de%20p%C3%A1ginas%3A%20" + qtdPg + "%0D%0APreciso%20de%20um%20script%20JS%3F%20" + script + "%0D%0APreciso%20de%20um%20layout%3F%20" + layout + "%0D%0APrazo%3A%20" + prazo + "%20semana(s)%0D%0APre%C3%A7o%20Or%C3%A7ado%3A%20" + preco + "%0D%0A--------------%0D%0AE-mail%20gerado%20automaticamente%20atrav%C3%A9s%20da%20p%C3%A1gina%20de%20or%C3%A7amentos%20do%20site.%0D%0A";
-    mailto2 = "mailto:milenadpz@gmail.com?subject=Or%C3%A7amento&body=Servi%C3%A7o%20or%C3%A7ado%3A%20" + ServPrest + "%0D%0APrazo%3A%20" + prazo + "%20semana(s)%0D%0APre%C3%A7o%20Or%C3%A7ado%3A%20" + preco + "%0D%0A--------------%0D%0AE-mail%20gerado%20automaticamente%20atrav%C3%A9s%20da%20p%C3%A1gina%20de%20or%C3%A7amentos%20do%20site.%0D%0A"
+    mailto1 = "mailto:milenadiasdpz@gmail.com?subject=Or%C3%A7amento&body=Servi%C3%A7o%20or%C3%A7ado%3A%20" + ServPrest + "%0D%0AQuantidade%20de%20p%C3%A1ginas%3A%20" + qtdPg + "%0D%0APreciso%20de%20um%20script%20JS%3F%20" + script + "%0D%0APreciso%20de%20um%20layout%3F%20" + layout + "%0D%0APrazo%3A%20" + prazo + "%20semana(s)%0D%0APre%C3%A7o%20Or%C3%A7ado%3A%20" + preco + "%0D%0A--------------%0D%0AE-mail%20gerado%20automaticamente%20atrav%C3%A9s%20da%20p%C3%A1gina%20de%20or%C3%A7amentos%20do%20site.%0D%0A";
+    mailto2 = "mailto:milenadiasdpz@gmail.com?subject=Or%C3%A7amento&body=Servi%C3%A7o%20or%C3%A7ado%3A%20" + ServPrest + "%0D%0APrazo%3A%20" + prazo + "%20semana(s)%0D%0APre%C3%A7o%20Or%C3%A7ado%3A%20" + preco + "%0D%0A--------------%0D%0AE-mail%20gerado%20automaticamente%20atrav%C3%A9s%20da%20p%C3%A1gina%20de%20or%C3%A7amentos%20do%20site.%0D%0A"
     if (op == 1 || op == 2) {
         window.location.href = mailto1;
     } else {
