@@ -69,7 +69,7 @@ function enviar() {
     } else if (op == 3) {
         ServPrest = "Soluções Digitais";
     } else {
-        ServPrest = "Margeting Digital";
+        ServPrest = "Marketing Digital";
     }
     preco = $('#preco').text();
     qtdPg = $('#qtde').val();
