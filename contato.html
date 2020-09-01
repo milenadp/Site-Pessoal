@@ -7,60 +7,29 @@
 
     <title>MDPZ</title>
 
-    <!-- meta tags utilizadas pelo navegador e pelo google -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="robots" content="all" />
-    <meta name="rating" content="general" />
-    <meta name="distribution" content="global" />
-    <meta name="language" content="pt-br" />
-    <meta property="locale" content="pt-br" />
-    <meta name="content-language" content="portuguese" />
-    <meta name="doc-class" content="completed" />
-    <meta name="description" content="Formulário para entrar em contato">
-    <meta name="abstract" content="Entrar em contato" />
-    <meta name="keywords" content="contato, mensagem, whatsapp, email, telefone, message" />
-    <meta name="title" content="M2 Solutions" />
-    <meta name="identifier-url" content="milenadp.github.com" />
-    <meta itemprop="url" content="milenadp.github.com">
-    <meta name="author" content="M2 Solutions" />
-    <meta name="reply-to" content="milenadiasdoz@gmail.com" />
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Trade+Winds&display=swap" rel="stylesheet">
 
-    <!-- Icones Bootstrap 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
-    <!-- Google AdSense -->
-    <script data-ad-client="ca-pub-9278165302180733" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162517317-1"></script>
-
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 shadow fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">MDPZ</a>
+            <a class="navbar-brand" href="#"><img src="image/logo.png" style="width: 50px; height: 50px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="index.html">Início
-                  <span class="sr-only">(current)</span>
-                </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início
+              <span class="sr-only">(current)</span>
+            </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobre.html">Sobre</a>
@@ -68,18 +37,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="servicos.html">Serviços</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="contato.html">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    </header>
 
-
-    <!-- Conteúdo da página -->
-    <div class="container">
-        <div class="paginaContato card border-0 shadow my-5">
+    <!-- Page Content -->
+    <div class="container" style="margin-top: 120px;">
+        <div class="paginaContato card border-0 shadow">
             <div class="card-body p-5">
                 <script>
                     window.dataLayer = window.dataLayer || [];
@@ -103,7 +72,7 @@
                         <h1 style="font-family: 'Pacifico';" class="center titulo mg-contato">Contato</h1>
                     </legend>
                     <small class="obrig"><b>*Campos Obrigatórios</b></small>
-                    <form class="campos mg-form" name="input" action="https://formspree.io/menina_mila@hotmail.com" method="POST">
+                    <form class="campos mg-form" name="input" action="https://formspree.io/milenadiasdpz@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="formGroupExampleInput">Nome:*</label>
                             <input type="text" name="Nome" class="form-control" required placeholder="Nome">
@@ -122,8 +91,8 @@
                             <textarea class="form-control" name="Mensagem" type="text" required placeholder="Digite sua mensagem aqui."></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-contato">Enviar</button>
-                            <button type="reset" class="btn btn-contato">Apagar</button>
+                            <button type="submit" class="btn btn-secondary">Enviar</button>
+                            <button type="reset" class="btn btn-secondary">Apagar</button>
                         </div>
                     </form>
                 </fieldset>
@@ -142,17 +111,11 @@
     </div>
 
     <!-- Scripts -->
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript (Template) -->
-    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
-    <!-- Your custom scripts  -->
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </body>
 
 </html>
