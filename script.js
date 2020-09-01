@@ -41,6 +41,19 @@ function atualizarPreco() {
 
 function atualizar() {
     contadora = 0;
+    $('#plH').empty();
+    plh = "Serviço Selecionado: "
+    op = $('#servicos').val();
+    if (op == 1) {
+        plh += "Web Sites";
+    } else if (op == 2) {
+        plh += "Aplicações Mobile";
+    } else if (op == 3) {
+        plh += "Soluções Digitais";
+    } else {
+        plh += "Marketing Digital";
+    }
+    $('#plH').append(plh);
     atualizarPreco();
 }
 
@@ -55,7 +68,7 @@ function dataRodape() {
 }
 
 function mostrarOrcamento() {
-    contadora = 0;
+    atualizar();
     var secaoOrcamento = document.getElementById("orcamento");
     secaoOrcamento.style.display = "block";
 };
